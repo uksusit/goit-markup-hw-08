@@ -1,31 +1,54 @@
 /* hero */
 .hero {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    /* flex-shrink: 0; */
-    background: var(--footer-bg-color);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.40),
-            rgba(47, 48, 58, 0.40)),
-        url(../images/Img-hero.jpg);
-    /* position: relative;           */
+    max-width: 480px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background: var(--footer-bg-color);
+        text-align: center;
+        // margin-left: auto;
+        // margin-right: auto;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)),
+                url(../images/img-hero-480.webp);
+
+//DESKTOP    
+    // max-width: 1600px;
+    // height: 600px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // background: var(--footer-bg-color);
+    // text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // background-image: linear-gradient(to right,
+    //         rgba(47, 48, 58, 0.40),
+    //         rgba(47, 48, 58, 0.40)),
+    //     url(../images/Img-hero.jpg);
 }
 
 .title-hero {
-    width: 696px;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36364;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    color: var(--white-color);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1.61538;   /*42px;*/   /* 161.538% */
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
+
+
+// DESKTOP
+    // width: 696px;
+    // text-align: center;
+    // font-size: 44px;
+    // font-weight: 900;
+    // line-height: 1.36364;
+    // letter-spacing: 2.64px;
+    // text-transform: uppercase;
+    // color: var(--white-color);
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-bottom: 30px;
 }
