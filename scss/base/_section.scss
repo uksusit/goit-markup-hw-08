@@ -1,9 +1,18 @@
 .section {
+    padding-top: 60px;
+    outline: auto;
+    
+    // max-width: 450px;
+
+    // desktop
+    @media screen and (min-width:1024px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 
     & ul {
         display: flex;
+        flex-wrap: wrap;
         }
     
     & img {
