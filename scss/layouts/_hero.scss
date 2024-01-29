@@ -13,8 +13,33 @@
                 url(../images/hero-sm.webp);
             background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
 
+
+
+// tab
+        @include mq(tab) {
+            display: flex;
+                justify-content: center;
+        max-width: 768px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.40),
+                        rgba(47, 48, 58, 0.40)),
+                    url(../images/hero-md.webp);
+    }
+    
 //DESKTOP    
+
+    @include mq(desk) {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.40),
+            rgba(47, 48, 58, 0.40)),
+            url(../images/hero-lg.webp);
+    }
     // max-width: 1600px;
     // height: 600px;
     // padding-top: 200px;
