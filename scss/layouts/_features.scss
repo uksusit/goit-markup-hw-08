@@ -7,6 +7,7 @@
 }
 
 .features__title {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.42px;
@@ -27,16 +28,20 @@
 
 /* features icons */
 .features__pad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     /* padding: 25px 100px; */
     height: 120px;
-    width: 270px;
+    width: 100%;
+    // width: 270px;
     border-radius: 4px;
     background-color: var(--btn-bg-color);
     margin-bottom: 30px;
     /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width:1024px) {
+            width: 270px;
+        }
 }
 
 .features__icon {
