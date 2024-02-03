@@ -30,3 +30,9 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
+// mob, tab
+.we-do.section  {
+    @include mq (not-desk) {
+    display: none;
+    }
+}
