@@ -1,7 +1,12 @@
 /* clients */
+// .clients .container {
+//     max-width: 480px;
+// }
 .clients__list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* .clients h2 {
@@ -17,8 +22,9 @@ display: flex;
 
 .client {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* color: inherit; */
@@ -28,6 +34,12 @@ display: flex;
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include mq (tab){
+        width: 226px;
+    }
+    @include mq (desk){
+        width: 170px;
+    }
 
     &:hover,
     &:focus {

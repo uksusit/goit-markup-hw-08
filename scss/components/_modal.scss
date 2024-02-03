@@ -3,12 +3,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    max-height: 609px;
+    max-width: 450px;
     border-radius: 4px;
     background: var(--white-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding: 40px;
+@include mq (desk) {
+    width: 528px;
+    height: 581px;   
+}
+    
 }
 
 .modal__close {

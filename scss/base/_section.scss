@@ -11,15 +11,16 @@
         // }
 
     // desktop
-    @media screen and (min-width:1024px) {
+    @include mq (desk) {
     padding-top: 94px;
     padding-bottom: 94px;
-    }
-
+    
     & ul {
         display: flex;
         flex-wrap: wrap;
         }
+    }
+
     
     & img {
             display: block;

@@ -119,19 +119,28 @@
 
 .form__text-policy {
     margin-left: 8px;
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    // desktop
+    @include mq (desk) {
+        font-size: 14px;
     letter-spacing: 0.42px;
+    }
     /* outline: auto; */
 }
 
 .form__policy {
     margin-left: 5px;
     color: var(--blue-color);
-    letter-spacing: 0.42px;
+    letter-spacing: 0.03em;
     text-decoration-line: underline;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     /* 171.429% */
+    @include mq (desk) {
+        font-size: 14px;
+    letter-spacing: 0.42px;
+    }
     /* outline: none; */
 }
 
