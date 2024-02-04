@@ -8,6 +8,7 @@
 } */
 .site-nav {
     margin-left: 93px;
+    @include mq (tab-only){margin-left: 88px;}
 }
 
 .site-nav__item {

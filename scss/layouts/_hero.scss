@@ -1,6 +1,6 @@
 /* hero */
 .hero {
-    max-width: 480px;
+    // max-width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
         background: var(--footer-bg-color);
@@ -21,7 +21,7 @@
         @include mq(tab) {
             display: flex;
                 justify-content: center;
-        max-width: 768px;
+        // max-width: 768px;
         padding-top: 200px;
         padding-bottom: 200px;
             background-image: linear-gradient(to right,
