@@ -112,6 +112,15 @@ p {
   padding-top: 60px;
   outline: auto;
 }
+@media screen and (min-width: 768px) {
+  .section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1280px) {
   .section {
     padding-top: 94px;
@@ -519,7 +528,7 @@ footer .logo span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* gap: 10px; */
+  gap: 10px;
 }
 
 .social__btn {
@@ -554,10 +563,6 @@ footer .logo span {
 .social__icon {
   width: 20px;
   height: 20px;
-}
-
-.social li + li {
-  margin-left: 10px;
 }
 
 /* hero */
@@ -614,6 +619,8 @@ footer .logo span {
 
 .features__items {
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .features__title {
@@ -728,6 +735,77 @@ footer .logo span {
   .we-do.section {
     display: none;
   }
+}
+
+/* team sections            ---------------------------------------------     */
+.team {
+  background: var(--btn-bg-color);
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__item {
+  max-width: 450px;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background: #FFF;
+  /* material shadow v1 */
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__item {
+    max-width: 270px;
+  }
+}
+
+.team__img {
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__img {
+    max-width: 270px;
+  }
+}
+
+.team__list div {
+  padding: 30px 32px;
+}
+
+.team__prof {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  color: var(--gray-color);
+  margin-bottom: 16px;
+}
+
+.team__name {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
 /* clients */

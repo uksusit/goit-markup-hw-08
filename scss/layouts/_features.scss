@@ -3,7 +3,11 @@
 }
 
 .features__items {
+
     gap: 30px;
+    
+    flex-wrap: wrap;
+
 }
 
 .features__title {
