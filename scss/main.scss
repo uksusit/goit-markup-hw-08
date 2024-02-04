@@ -5,7 +5,7 @@
 @import './utils/relative';
 // @import './utils/norm';
 @import './utils/mixins.scss';
-@import './utils/page';
+// @import './utils/page';
 // base
 @import './base/common';
 @import './base/reset';
@@ -14,9 +14,14 @@
 
 
 // components
-// @import './components/header';
-// @import './components/nav';
-// @import './components/header-contacts';
+@include mq (mob-only) {
+@import './components/header-mob';
+}
+@include mq (tab) {
+@import './components/header';
+@import './components/nav';
+@import './components/header-contacts';
+}
 
 @import './components/logo';
 @import './components/btn';

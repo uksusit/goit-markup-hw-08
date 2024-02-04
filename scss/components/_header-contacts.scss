@@ -3,7 +3,10 @@
 .header-contacts {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    @include mq (desk){        
     justify-content: center;
+    }
 }
 
 .header-contacts__link {
