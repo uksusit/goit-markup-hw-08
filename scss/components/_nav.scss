@@ -1,22 +1,31 @@
 /* nav-menu */
 .nav {
+        // display: none;
+    @include mq (tab) {
     display: flex;
     align-items: center;
+        }
 }
 
 /* header li {
 } */
 .site-nav {
     margin-left: 93px;
-    @include mq (tab-only){margin-left: 88px;}
+    @include mq (tab-only){
+        margin-left: 88px;
+    }
 }
 
 .site-nav__item {
+    display: none;
+    
+        @include mq (tab) {
     display: inline-block;
     font-weight: 500;
     letter-spacing: 0.28px;
     /* outline: 1px solid red; */
     position: relative;
+        }
     &:not(last-child) {
     margin-left: 50px;
         }

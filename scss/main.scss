@@ -17,11 +17,11 @@
 // @include mq (smart) {
 // }
 @import './components/header-mob';
-@include mq (tab) {
+// @include mq (tab) {
+// }
 @import './components/header';
 @import './components/nav';
 @import './components/header-contacts';
-}
 
 @import './components/logo';
 @import './components/btn';
