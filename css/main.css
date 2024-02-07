@@ -293,7 +293,7 @@ a.mob-social__link {
     position: relative;
   }
 }
-.site-nav__item:not(last-child) {
+.site-nav__item:not(:first-of-type) {
   margin-left: 50px;
 }
 
