@@ -3,6 +3,9 @@
     width: 100%;
     height: 100%;
     padding: 40px 48px;
+    @include mq (tab){
+        display: none;
+    }
 }
 
 .mob-nav {
@@ -11,6 +14,9 @@
         font-size: 40px;
         letter-spacing: 0.02em;
         color: var(--gray-color);
+        @include mq (tab) {
+                display: none;
+            }
 }
 
 

@@ -14,9 +14,9 @@
 
 
 // components
-@include mq (mob-only) {
+// @include mq (mob-only) {
+// }
 @import './components/header-mob';
-}
 @include mq (tab) {
 @import './components/header';
 @import './components/nav';
