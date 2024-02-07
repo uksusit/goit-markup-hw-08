@@ -3,6 +3,12 @@
     $tab: 768px;
     $desk: 1280px;
 
+    @if $type == "smart" {
+        @media screen and (max-width: #{$mob - 0.02}) {
+            @content;
+        }
+    }
+
     @if $type == 'mob-only' {
         @media screen and (max-width: #{$tab - 0.02}) {
             @content;            
