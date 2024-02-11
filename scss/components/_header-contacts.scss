@@ -1,5 +1,6 @@
 /* header contacts */
 
+
 .header-contacts {
     display: none;
     @include mq (tab) {
@@ -46,6 +47,38 @@
     width: 10px;
     height: 16px;
         }
+}
+
+.site-nav {
+    display: none;
+
+    @include mq (mob) {
+        display: flex;
+    }
+}
+
+.header-contacts__link {
+    display: none;
+
+    @include mq (mob) {
+        display: flex;
+    }
+}
+
+.header-contacts__icon {
+    // display: none;
+    margin-right: 10px;
+    fill: currentColor;
+
+    &.envelope {
+        width: 16px;
+        height: 12px;
+    }
+
+    &.smartphone {
+        width: 10px;
+        height: 16px;
+    }
 }
 
 

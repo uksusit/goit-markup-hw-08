@@ -153,33 +153,11 @@ margin-left: 30px;
           flex-direction: column;
 }
 
-.site-nav {
-  display: none;
-}
-@media screen and (min-width: 480px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .mob-nav {
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
   color: var(--gray-color);
-}
-
-.header-contacts__link {
-  display: none;
-}
-@media screen and (min-width: 480px) {
-  .header-contacts__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .mob-cont {
@@ -215,20 +193,15 @@ margin-left: 30px;
   color: #757575;
 }
 
-.mob-soc-thumb {
-  width: 362px;
-}
-
 .mob-social {
   margin-top: 64px;
   margin-left: -10px;
-  width: 357px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .mob-social__item:not(:last-of-type) {
@@ -243,19 +216,6 @@ a.mob-social__link {
   line-height: 122%;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.header-contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.header-contacts__icon.envelope {
-  width: 16px;
-  height: 12px;
-}
-.header-contacts__icon.smartphone {
-  width: 10px;
-  height: 16px;
 }
 
 /* ---------------- header --------------------- */
@@ -405,6 +365,41 @@ opacity: 1;
 
 .header-contacts__item:not(last-child) {
   margin-left: 50px;
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.header-contacts__icon.envelope {
+  width: 16px;
+  height: 12px;
+}
+.header-contacts__icon.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+.site-nav {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-contacts__link {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .header-contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-contacts__icon {
