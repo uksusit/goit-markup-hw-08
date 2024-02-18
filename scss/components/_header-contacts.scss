@@ -5,11 +5,14 @@
     display: none;
     @include mq (tab) {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    }
-    @include mq (desk){        
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    }
+    @include mq (desk){       
+        flex-direction: row; 
+    justify-content: center;
+
     }
 }
 

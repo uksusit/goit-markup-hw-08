@@ -25,7 +25,11 @@ transition: transform 250ms ease-in-out;
 .menu-container .menu-toggle {
 color: aqua;
 }
-
+.menu-toggle {
+    @include mq (tab) {
+        display: none;
+    }
+}
 .mob-nav {
     // font-family: var(--font-family);
         font-weight: 500;
