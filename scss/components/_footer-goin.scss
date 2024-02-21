@@ -1,8 +1,14 @@
 /* приєднуйтесь */
 
 .goin {
-    margin-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
     width: 206px;
+    @include mq (desk) {
+        
+    margin-left: 70px;
+    }
     /* padding: 12px 0; */
 }
 
@@ -13,4 +19,7 @@
     letter-spacing: 0.42px;
     color: var(--white-color);
     margin-bottom: 20px;
+    @include mq (mob-only) {
+        text-align: center;
+    }
 }

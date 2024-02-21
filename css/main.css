@@ -1337,11 +1337,22 @@ footer {
   margin-top: 20px;
   width: 231px;
 }
+@media screen and (max-width: 767.98px) {
+  .address {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .ftr-adr {
   /* outline: 1px solid red; */
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+@media screen and (max-width: 767.98px) {
+  .ftr-adr {
+    text-align: center;
+  }
 }
 
 /* .ftr-adr  li {      
@@ -1386,9 +1397,15 @@ footer {
 
 /* приєднуйтесь */
 .goin {
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
   width: 206px;
   /* padding: 12px 0; */
+}
+@media screen and (min-width: 1280px) {
+  .goin {
+    margin-left: 70px;
+  }
 }
 
 .goin__text {
@@ -1398,6 +1415,11 @@ footer {
   letter-spacing: 0.42px;
   color: var(--white-color);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767.98px) {
+  .goin__text {
+    text-align: center;
+  }
 }
 
 /* icons */
@@ -1474,6 +1496,7 @@ footer {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .subscrb__input {
@@ -1488,16 +1511,11 @@ footer {
 }
 
 .subscrb__button {
-  width: 200px;
-  height: 50px;
-  margin-left: 12px;
   padding: 10px 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 50px;
+  width: 200px;
+  display: block;
+  margin: 0 auto 20px;
   border: none;
   border-radius: 4px;
   background: var(--blue-color);
@@ -1511,6 +1529,17 @@ footer {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: none; */
 }
+@media screen and (min-width: 1280px) {
+  .subscrb__button {
+    margin-left: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .subscrb__button:hover, .subscrb__button:focus {
   background: #188CE8;
 }
@@ -1522,4 +1551,11 @@ footer {
   width: 24px;
   height: 24px;
   fill: var(--white-color);
+}
+
+@media screen and (max-width: 767px) {
+  footer .logo {
+    display: block;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

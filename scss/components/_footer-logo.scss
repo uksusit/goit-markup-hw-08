@@ -1,0 +1,8 @@
+footer .logo  {
+    // color: var(--white-color);
+    @media screen and (max-width: 767px) {
+        display: block;
+        text-align: center;
+        
+    }
+}

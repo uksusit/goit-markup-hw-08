@@ -47,6 +47,7 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
+    margin-bottom: 20px;
 
     @include mq (tab) {
     width: 358px;
@@ -62,12 +63,14 @@
 }
 
 .subscrb__button {
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
     padding: 10px 28px;
-    display: flex;
-    align-items: center;
+    height: 50px;
+    width: 200px;
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 0 auto 20px;
+
     border: none;
     border-radius: 4px;
     background: var(--blue-color);
@@ -78,6 +81,13 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* outline: none; */
+
+    @include mq (desk) {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+
+    }
 
     &:hover,
     &:focus {

@@ -3,12 +3,21 @@
 .address {
     margin-top: 20px;
     width: 231px;
-    ;
+    @include mq (mob-only) {
+            margin-left: auto;
+            margin-right: auto;
+    }    
 }
 
 .ftr-adr {
     /* outline: 1px solid red; */
     box-sizing: content-box;
+    @include mq (mob-only) {
+        // margin-left: auto;
+        // margin-right: auto;
+    text-align: center;
+
+    }
 }
 
 /* .ftr-adr  li {      
