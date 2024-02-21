@@ -1,24 +1,38 @@
 /* -------------- footer  subscribe -------------- */
 .subscrb {
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq (tab) {
+    margin-left: 93px; 
+   }
     /* padding: 40px; */
 }
 
 .subscrb__text {
+
     margin-bottom: 20px;
     color: #FFF;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+        text-align: center;
+        margin-top: 20px;
+    }
 
 }
 
 .subscrb__string {
+    margin-left: auto;
+    margin-right: auto;
+    @include mq (tab) {
     display: flex;
+
+    }
 }
 
 .subscrb__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
     color: rgba(255, 255, 255, 0.60);
@@ -34,6 +48,8 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
 
+    @include mq (tab) {
+    width: 358px;
     &:hover,
     &:focus-within,
     &:active {
@@ -41,6 +57,8 @@
             /* border: 1px solid var(--blue-color); */
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         }
+
+    }
 }
 
 .subscrb__button {
