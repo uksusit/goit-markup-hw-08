@@ -1339,14 +1339,11 @@ footer {
   margin: auto;
   text-align: center;
 }
-<<<<<<< HEAD
 @media screen and (min-width: 1280px) {
   .ftr-adr-thumb {
     text-align: left;
   }
 }
-=======
->>>>>>> b999b97f8d52b6f22170996b55eb638d20eb7b56
 
 .address {
   margin-top: 20px;
@@ -1440,14 +1437,11 @@ footer {
 @media screen and (min-width: 768px) {
   .goin__text {
     margin-top: 5px;
-<<<<<<< HEAD
   }
 }
 @media screen and (min-width: 1280px) {
   .goin__text {
     text-align: left;
-=======
->>>>>>> b999b97f8d52b6f22170996b55eb638d20eb7b56
   }
 }
 
