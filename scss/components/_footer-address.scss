@@ -1,5 +1,13 @@
 /* footer address */
 
+.ftr-adr-thumb {
+    margin: auto;
+    text-align: center;
+    @include mq (desk) {
+           text-align: left;
+    }
+}
+
 .address {
     margin-top: 20px;
     width: 231px;

@@ -5,8 +5,8 @@
     margin-right: auto;
 
     width: 206px;
+
     @include mq (desk) {
-        
     margin-left: 70px;
     }
     /* padding: 12px 0; */
@@ -19,7 +19,16 @@
     letter-spacing: 0.42px;
     color: var(--white-color);
     margin-bottom: 20px;
-    @include mq (mob-only) {
         text-align: center;
+
+    @include mq (mob) {
+            margin-top: 50px;
     }
+    @include mq (tab) {
+        margin-top: 5px;
+    }
+        @include mq (desk) {
+            text-align: left;
+        }
+
 }

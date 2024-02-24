@@ -5,4 +5,7 @@ footer .logo  {
         text-align: center;
         
     }
+                @include mq (desk) {
+                    text-align: left;
+                }
 }
