@@ -20,10 +20,10 @@
     color: var(--white-color);
     margin-bottom: 20px;
         text-align: center;
-
-    @include mq (mob) {
             margin-top: 50px;
-    }
+
+    // @include mq (mob) {
+    // }
     @include mq (tab) {
         margin-top: 5px;
     }
