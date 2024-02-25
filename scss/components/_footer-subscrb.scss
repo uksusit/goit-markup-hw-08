@@ -6,6 +6,9 @@
     @include mq (tab) {
     margin: auto; 
    }
+           @include mq (desk) {
+               margin-right: 0;
+           }
     /* padding: 40px; */
 }
 
@@ -17,11 +20,11 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
         text-align: center;
-    // @media screen and (max-width: 767px)
-    @include mq (mob)
-     {
         margin-top: 20px;
-    }
+    // @media screen and (max-width: 767px)
+    // @include mq (mob)
+    //  {
+    // }
     @include mq (desk) {
         text-align: left;
     }

@@ -1428,11 +1428,7 @@ footer {
   color: var(--white-color);
   margin-bottom: 20px;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .goin__text {
-    margin-top: 50px;
-  }
+  margin-top: 50px;
 }
 @media screen and (min-width: 768px) {
   .goin__text {
@@ -1472,6 +1468,11 @@ footer {
     margin: auto;
   }
 }
+@media screen and (min-width: 1280px) {
+  .subscrb {
+    margin-right: 0;
+  }
+}
 
 .subscrb__text {
   margin-bottom: 20px;
@@ -1480,11 +1481,7 @@ footer {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .subscrb__text {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
 }
 @media screen and (min-width: 1280px) {
   .subscrb__text {
