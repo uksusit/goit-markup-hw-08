@@ -1342,6 +1342,7 @@ footer {
 @media screen and (min-width: 1280px) {
   .ftr-adr-thumb {
     text-align: left;
+    margin: 0;
   }
 }
 
@@ -1411,12 +1412,19 @@ footer {
 .goin {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
   width: 206px;
   /* padding: 12px 0; */
+}
+@media screen and (min-width: 768px) {
+  .goin {
+    margin-top: 5px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .goin {
     margin-left: 70px;
+    margin-top: 12px;
   }
 }
 
@@ -1428,12 +1436,6 @@ footer {
   color: var(--white-color);
   margin-bottom: 20px;
   text-align: center;
-  margin-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  .goin__text {
-    margin-top: 5px;
-  }
 }
 @media screen and (min-width: 1280px) {
   .goin__text {
@@ -1461,16 +1463,13 @@ footer {
 .subscrb {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
   /* padding: 40px; */
-}
-@media screen and (min-width: 768px) {
-  .subscrb {
-    margin: auto;
-  }
 }
 @media screen and (min-width: 1280px) {
   .subscrb {
     margin-right: 0;
+    margin-top: 12px;
   }
 }
 
@@ -1481,7 +1480,6 @@ footer {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
 }
 @media screen and (min-width: 1280px) {
   .subscrb__text {
@@ -1540,7 +1538,7 @@ footer {
   height: 50px;
   width: 200px;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   text-align: left;
   border: none;
   border-radius: 4px;
