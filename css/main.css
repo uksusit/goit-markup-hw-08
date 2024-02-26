@@ -208,12 +208,22 @@ margin-left: 30px;
   letter-spacing: 0.02em;
   color: var(--gray-color);
 }
-.mob-nav:focus, .mob-nav:hover {
-  color: var(--blue-color);
-}
 
 .mob-nav__item:not(:first-of-type) {
   margin-top: 32px;
+}
+
+.mob-nav__link {
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-nav__link:hover, .mob-nav__link:focus {
+  color: var(--blue-color);
+  /* fill: var(--blue-color); */
 }
 
 .mob-cont {

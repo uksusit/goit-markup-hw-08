@@ -64,14 +64,24 @@ transition: transform 250ms ease-in-out;
     // @include mq (mob) {
     //         display: none;
     //     };
-                &:focus,
-                &:hover {
-                    color: var(--blue-color);
-                }
+
 }
 
 .mob-nav__item:not(:first-of-type) {
     margin-top: 32px;
+}
+
+.mob-nav__link {
+
+        transition-property: color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:hover, 
+            &:focus {
+                color: var(--blue-color);
+                /* fill: var(--blue-color); */
+            }
 }
 
 .mob-cont {
