@@ -185,6 +185,20 @@ margin-left: 30px;
   border-radius: 50%;
   outline: none;
 }
+.menu-toggle svg {
+  fill: var(--main-text-color);
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle svg:hover, .menu-toggle svg:focus {
+  fill: var(--blue-color);
+  cursor: pointer;
+  /* border-color: var(--blue-color) ; */
+}
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -200,6 +214,18 @@ margin-left: 30px;
 .menu-container .menu-toggle svg {
   top: 11px;
   left: 11px;
+  fill: var(--main-text-color);
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container .menu-toggle svg:hover, .menu-container .menu-toggle svg:focus {
+  fill: var(--blue-color);
+  cursor: pointer;
+  /* border-color: var(--blue-color) ; */
 }
 
 .mob-nav {

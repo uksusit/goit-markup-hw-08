@@ -1,6 +1,10 @@
 
 
 // .mob-menu 
+
+
+
+
 .menu-container {
     position: fixed;
     top: 0;
@@ -38,6 +42,23 @@ transition: transform 250ms ease-in-out;
     outline: none;
     // top: 12px;
     // left: 8px;
+    & svg {
+            // top: 11px;
+            // left: 11px;
+            fill: var(--main-text-color);
+            transition-property: border-color,
+                fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                fill: var(--blue-color);
+                cursor: pointer;
+                /* border-color: var(--blue-color) ; */
+            }
+        }
+    
 
     @include mq (tab) {
         display: none;
@@ -53,7 +74,21 @@ transition: transform 250ms ease-in-out;
     & svg {
         top: 11px;
         left: 11px;
+    fill: var(--main-text-color);
+        transition-property: border-color,
+        fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            fill: var(--blue-color);
+            cursor: pointer;
+            /* border-color: var(--blue-color) ; */
+        }
     }
+
+
 }
 .mob-nav {
     // font-family: var(--font-family);
