@@ -208,6 +208,9 @@ margin-left: 30px;
   letter-spacing: 0.02em;
   color: var(--gray-color);
 }
+.mob-nav:focus, .mob-nav:hover {
+  color: var(--blue-color);
+}
 
 .mob-nav__item:not(:first-of-type) {
   margin-top: 32px;

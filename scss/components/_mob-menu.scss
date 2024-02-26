@@ -64,6 +64,10 @@ transition: transform 250ms ease-in-out;
     // @include mq (mob) {
     //         display: none;
     //     };
+                &:focus,
+                &:hover {
+                    color: var(--blue-color);
+                }
 }
 
 .mob-nav__item:not(:first-of-type) {
