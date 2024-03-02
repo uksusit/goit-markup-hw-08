@@ -30,6 +30,7 @@
 }
 .team__img {
     max-width: 450px;
+    
     @include mq (tab){
         width: 354px;
     }
