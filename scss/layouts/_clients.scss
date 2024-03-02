@@ -9,6 +9,20 @@
     justify-content: center;
 }
 
+.clients__item {
+    width: 210px;
+    @media screen and (max-width: 480px) {
+        
+    max-width: calc((100% - 30px) / 2 );
+}
+
+    @include mq (tab){
+        width: 226px;
+    }
+    @include mq (desk){
+        width: 170px;
+    }
+    }  
 /* .clients h2 {
     color: #212121;
     text-align: center;
@@ -22,7 +36,8 @@ display: flex;
 
 .client {
     display: flex;
-    width: 210px;
+   
+  
     height: 92px;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,12 +49,6 @@ display: flex;
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @include mq (tab){
-        width: 226px;
-    }
-    @include mq (desk){
-        width: 170px;
-    }
 
     &:hover,
     &:focus {

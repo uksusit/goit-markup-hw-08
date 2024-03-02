@@ -1313,6 +1313,25 @@ footer .logo span {
           justify-content: center;
 }
 
+.clients__item {
+  width: 210px;
+}
+@media screen and (max-width: 480px) {
+  .clients__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .clients__item {
+    width: 170px;
+  }
+}
+
 /* .clients h2 {
     color: #212121;
     text-align: center;
@@ -1327,7 +1346,6 @@ display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 210px;
   height: 92px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1347,16 +1365,6 @@ display: flex;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .client {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .client {
-    width: 170px;
-  }
 }
 .client:hover, .client:focus {
   color: var(--blue-color);
