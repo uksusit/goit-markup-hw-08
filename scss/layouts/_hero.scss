@@ -11,10 +11,19 @@
                     rgba(47, 48, 58, 0.40),
                     rgba(47, 48, 58, 0.40)),
                 url(../images/hero-sm.webp);
-                background-size: 480px 400px;
+                // background-size: 480px 400px;
             background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+    //mob 
+        @include mq(mob) {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.40),
+                    rgba(47, 48, 58, 0.40)),
+                url(../images/hero-md.webp);
+                background-size: 780px 400px;
+
+        }
 
     // tab
         @include mq(tab) {
@@ -24,12 +33,12 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.40),
-                    rgba(47, 48, 58, 0.40)),
-                url(../images/hero-md.webp);
-                background-size: 780px 400px;
-                                background-size: cover;
-                                    background-position: center;
+            rgba(47, 48, 58, 0.40),
+            rgba(47, 48, 58, 0.40)),
+            url(../images/hero-lg.webp);
+            background-size: 1600px 600px;
+                    // background-size: cover;
+                    // background-position: center;
     }
     
     //DESKTOP    
@@ -37,33 +46,27 @@
         max-width: 1600px;
         margin: 0 auto;
         // height: 600px;
-        background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.40),
-            rgba(47, 48, 58, 0.40)),
-            url(../images/hero-lg.webp);
-            background-size: 1600px 600px;
-            // background-position: center;
     }
-
 }
+
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-                background-size: 480px 400px;
+                // background-size: 480px 400px;
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.40),
                     rgba(47, 48, 58, 0.40)),
                  url('/images/hero-sm-x2.webp');
         @media screen and (min-width: 480px) {
-                background-size: 780px 400px;
+                // background-size: 780px 400px;
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.40),
                     rgba(47, 48, 58, 0.40)),
                  url('/images/hero-md-x2.webp') ;
         }
         @media screen and (min-width: 768px) {
-                background-size: 1600px 600px;
+                // background-size: 1600px 600px;
                 background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.40),
                     rgba(47, 48, 58, 0.40)),
