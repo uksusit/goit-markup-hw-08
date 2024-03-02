@@ -1065,10 +1065,10 @@ footer .logo span {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-sm.webp);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-sm.webp);
+  background-size: 480px 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: 480px 400px;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -1082,6 +1082,9 @@ footer .logo span {
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-md.webp);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-md.webp);
+    background-size: 780px 400px;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1090,15 +1093,35 @@ footer .logo span {
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-lg.webp);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-lg.webp);
-    background-position: center;
+    background-size: 1600px 600px;
   }
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/hero-sm-x2.webp");
+    background-size: 480px 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-sm-x2.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-sm-x2.webp");
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
+    background-size: 780px 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-md-x2.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-md-x2.webp");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-size: 1600px 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-lg-x2.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-lg-x2.webp");
+  }
+}
+.hero-thumb {
+  max-width: 480px;
+}
+
 .title-hero {
   color: #FFF;
   text-align: center;
@@ -1109,6 +1132,7 @@ footer .logo span {
   line-height: 1.61538; /*42px;*/ /* 161.538% */
   letter-spacing: 1.56px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .features {
