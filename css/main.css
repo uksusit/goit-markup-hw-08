@@ -526,7 +526,7 @@ opacity: 1;
 
 /* logo */
 .logo {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -648,7 +648,7 @@ footer .logo span {
 .form__text {
   color: #212121;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -660,7 +660,7 @@ footer .logo span {
   display: block;
   margin-top: 10px;
   color: var(--gray-color);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -870,7 +870,7 @@ footer .logo span {
   height: 50px;
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1130,7 +1130,7 @@ footer .logo span {
 .title-hero {
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 26px;
   font-style: normal;
   font-weight: 900;
