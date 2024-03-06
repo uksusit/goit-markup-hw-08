@@ -9,6 +9,9 @@
     background: var(--white-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding: 40px;
+    @media screen and (max-width:479px) {
+        max-width: 94vw;
+    }
 @include mq (desk) {
     max-width: 528px;
     height: 581px;   
