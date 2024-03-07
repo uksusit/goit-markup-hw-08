@@ -86,7 +86,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -107,7 +106,6 @@ p {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  outline: auto;
 }
 @media screen and (min-width: 768px) {
   .section ul {
