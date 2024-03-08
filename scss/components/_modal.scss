@@ -3,15 +3,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-height: 609px;
-    max-width: 450px;
-    // width: 450px;
+    // max-height: 609px;
+    // max-width: 450px;
+    width: 450px;
     border-radius: 4px;
     background: var(--white-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding: 40px;
     // @media screen and (max-width:479px) {
-    //     max-width: 94vw;
+    //     width: calc(100vw - (15px * 2)) ;
     // }
 @include mq (desk) {
     max-width: 528px;
