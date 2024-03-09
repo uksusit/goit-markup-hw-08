@@ -10,6 +10,7 @@
 }
 .team__item {
     max-width: 450px;
+    // max-width: calc(100% - 30px);
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
@@ -31,7 +32,7 @@
 .team__img {
     max-width: 450px;
     
-    @include mq (tab){
+    @include mq (tab-only){
         width: 354px;
     }
     @include mq (desk){

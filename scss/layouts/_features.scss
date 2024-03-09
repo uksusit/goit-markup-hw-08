@@ -3,14 +3,10 @@
 // }
 
 .features__items {
-
     @include mq(tab){
-        
-    gap: 30px;
+        gap: 30px;
     }
-    
-    // flex-wrap: wrap;
-
+        // flex-wrap: wrap;
 }
 
 .features__title {
@@ -47,7 +43,6 @@
     }
     }
 }
-
 
 
 /* features icons */
