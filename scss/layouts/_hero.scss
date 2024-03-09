@@ -93,13 +93,15 @@
         margin-bottom: 30px;
         // max-width: 696px;
 
-
 // DESKTOP
+        @include mq(desk) {
+    font-size: 44px;
+    line-height: 1.36364;
+        }
+
     // width: 696px;
     // text-align: center;
-    // font-size: 44px;
     // font-weight: 900;
-    // line-height: 1.36364;
     // letter-spacing: 2.64px;
     // text-transform: uppercase;
     // color: var(--white-color);

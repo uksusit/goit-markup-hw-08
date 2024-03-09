@@ -1140,6 +1140,12 @@ footer .logo span {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1280px) {
+  .title-hero {
+    font-size: 44px;
+    line-height: 1.36364;
+  }
+}
 
 .features {
   padding-bottom: 0;
