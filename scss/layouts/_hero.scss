@@ -29,8 +29,6 @@
             display: flex;
             justify-content: center;
         // max-width: 768px;
-        padding-top: 200px;
-        padding-bottom: 200px;
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.40),
             rgba(47, 48, 58, 0.40)),
@@ -42,6 +40,8 @@
     
     //DESKTOP    
     @include mq(desk) {
+        padding-top: 200px;
+        padding-bottom: 200px;
         max-width: 1600px;
         margin: 0 auto;
         height: 600px;

@@ -8,11 +8,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+        gap: 10px;
     }
     @include mq (desk){       
         flex-direction: row; 
     justify-content: center;
-
     }
 }
 

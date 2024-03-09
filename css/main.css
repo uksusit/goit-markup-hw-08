@@ -431,6 +431,7 @@ opacity: 1;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1093,8 +1094,6 @@ footer .logo span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero-desk.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desk.jpg);
     background-size: 1600px 600px;
@@ -1102,6 +1101,8 @@ footer .logo span {
 }
 @media screen and (min-width: 1280px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
     margin: 0 auto;
     height: 600px;
@@ -1157,10 +1158,6 @@ footer .logo span {
     line-height: 1.36364;
     letter-spacing: 2.64px;
   }
-}
-
-.features {
-  padding-bottom: 0;
 }
 
 .features__items {
