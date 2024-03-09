@@ -4,8 +4,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     // max-height: 609px;
-    // max-width: 450px;
-    width: 450px;
+    width: calc(100vw - 30px);
     border-radius: 4px;
     background: var(--white-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -13,10 +12,13 @@
     // @media screen and (max-width:479px) {
     //     width: calc(100vw - (15px * 2)) ;
     // }
-@include mq (desk) {
+    @include mq(mob){
+    width: 450px;
+    }
+    @include mq (desk) {
     max-width: 528px;
     height: 581px;   
-}
+    }
     
 }
 
