@@ -4,9 +4,12 @@
 
 .features__items {
 
+    @include mq(tab){
+        
     gap: 30px;
+    }
     
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
 }
 
@@ -38,7 +41,14 @@
 
 .features__item {
     min-width: 270px;
+  @include mq(mob-only){ 
+ &:not(:last-of-type) {       
+    margin-bottom: 30px;
+    }
+    }
 }
+
+
 
 /* features icons */
 .features__pad {

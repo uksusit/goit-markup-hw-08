@@ -321,6 +321,11 @@ a.mob-social__link {
 .header {
   border-bottom: 1px solid #ECECEC;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
+}
 
 .header--container {
   display: -webkit-box;
@@ -1160,10 +1165,10 @@ footer .logo span {
   }
 }
 
-.features__items {
-  gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .features__items {
+    gap: 30px;
+  }
 }
 
 .features__title {
@@ -1199,6 +1204,11 @@ footer .logo span {
 
 .features__item {
   min-width: 270px;
+}
+@media screen and (max-width: 767.98px) {
+  .features__item:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 }
 
 /* features icons */
