@@ -151,6 +151,10 @@ transition: transform 250ms ease-in-out;
     font-size: 34px;
     letter-spacing: 0.02em;
     color: #2196f3;
+    // font adapt
+    @media screen and (max-width:480px) {
+        font-size: 7.085vw;
+    }
 }
 
 .mob-cont__mail {
@@ -195,5 +199,9 @@ a.mob-social__link {
     line-height: 122%;
     letter-spacing: 0.02em;
     color: #2196f3;
+    @media screen and (max-width:480px) {
+        font-size: 3.75vw;
+        
+    }
 
 }
