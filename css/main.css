@@ -967,10 +967,25 @@ footer .logo span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .menu-filter {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .menu-filter__item {

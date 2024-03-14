@@ -2,8 +2,16 @@
 
 .menu-filter {
     display: flex;
+    @include mq (mob-only){
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px 8px;
+        margin-bottom: 45px;
+    }
+    @include mq (desk){
     justify-content: center;
     margin-bottom: 50px;
+    }
 }
 
 .menu-filter__item {
