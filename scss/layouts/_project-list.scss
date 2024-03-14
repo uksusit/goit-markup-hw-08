@@ -7,8 +7,17 @@
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
+    justify-content: center;
+
+    @include mq (tab) {
+        justify-content: space-between;
+    }
+
+    // @include mq (desk) {
+    // justify-content: space-between;
+    // }
+    
     /* outline: 1px solid red; */
 }
 

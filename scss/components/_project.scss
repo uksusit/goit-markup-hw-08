@@ -3,6 +3,19 @@
     /* box-shadow: none; */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    // testing width ------------ після підстановки зображень можна прибрати
+    @include mq (smart){
+        // width: 450px;
+        img {width: 450px;}
+    }
+    @include mq (tab-only) {
+        img {width: 354px;}
+    }
+    @include mq (desk){
+        img {width: 370px;}
+    }
+    // ------------------------------
+
     &:hover,
     &:focus {
             box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);

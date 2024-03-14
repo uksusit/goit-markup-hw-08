@@ -979,11 +979,16 @@ footer .logo span {
     margin-bottom: 45px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .menu-filter {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu-filter {
     margin-bottom: 50px;
   }
 }
@@ -1028,6 +1033,21 @@ footer .logo span {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479.98px) {
+  .project img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .project img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .project img {
+    width: 370px;
+  }
 }
 .project:hover, .project:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -1472,11 +1492,18 @@ display: flex;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* outline: 1px solid red; */
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .projects li {

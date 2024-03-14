@@ -8,8 +8,11 @@
         gap: 15px 8px;
         margin-bottom: 45px;
     }
-    @include mq (desk){
+    @include mq (tab){
+        margin-bottom: 30px;
     justify-content: center;
+    }
+    @include mq (desk){
     margin-bottom: 50px;
     }
 }
