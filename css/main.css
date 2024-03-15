@@ -498,7 +498,7 @@ opacity: 1;
   width: 14px;
   height: 12px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header-contacts__icon.envelope {
     width: 16px;
     height: 12px;
@@ -508,7 +508,7 @@ opacity: 1;
   width: 10px;
   height: 14px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header-contacts__icon.smartphone {
     width: 10px;
     height: 16px;
