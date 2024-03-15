@@ -9,6 +9,7 @@
         img {width: 450px;}
     }
     @include mq (tab-only) {
+        width: 354px;
         img {width: 354px;}
     }
     @include mq (desk){
