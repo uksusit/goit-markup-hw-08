@@ -36,6 +36,12 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 2.667V0h24v2.667H0Zm0 6.666h24V6.667H0v2.666ZM0 16h24v-2.667H0V16Z" />
+                </svg>
+            </button>
         </div>
     </header>
     <main>           
@@ -291,20 +297,61 @@
         </div>
 
     </footer>
-        <script>
-            (() => {
-                document
-                    .querySelector('.js-speaker-form')
-                    .addEventListener('submit', e => {
-                        e.preventDefault();
+    <div class="menu-container js-menu-container mob-menu" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" />
+            </svg>
+        </button>
+    
+        <nav class="mobile-menu mob-nav">
+            <!-- <a class="logo" href="./index.html" lang="en">Web<span>Studio</span></a> -->
+            <ul class="mob-nav">
+                <li class="mob-nav__item"><a class="current mob-nav__link" href="./index.html">Студія</a></li>
+                <li class="mob-nav__item"><a class="mob-nav__link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="mob-nav__item"><a class="mob-nav__link" href="">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="mob-cont">
+            <li class="mob-cont__item"> <a class="mob-cont__link mob-cont__tel" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="mob-cont__item"> <a class="mob-cont__link mob-cont__mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+        </ul>
+    
+        <div class="mob-soc-thumb">
+            <ul class="mob-social">
+                <li class="mob-social__item"> <a class="mob-social__link" href="">Instagram</a></li>
+                <li class="mob-social__item"> <a class="mob-social__link" href="">Twitter</a></li>
+                <li class="mob-social__item"> <a class="mob-social__link" href="">Facebook</a></li>
+                <li class="mob-social__item"> <a class="mob-social__link" href="">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
 
-                        new FormData(e.currentTarget).forEach((value, name) =>
-                            console.log(`${name}: ${value}`),
-                        );
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
 
-                        e.currentTarget.reset();
-                    });
-            })();
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
         </script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
