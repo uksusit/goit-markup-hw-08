@@ -239,6 +239,11 @@ margin-left: 30px;
   letter-spacing: 0.02em;
   color: var(--gray-color);
 }
+@media screen and (max-width: 480px) {
+  .mob-nav {
+    font-size: 8.35vw;
+  }
+}
 
 .mob-nav__item:not(:first-of-type) {
   margin-top: 32px;
@@ -297,6 +302,11 @@ margin-left: 30px;
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (max-width: 480px) {
+  .mob-cont__mail {
+    font-size: 5vw;
+  }
+}
 
 .mob-social {
   margin-top: 64px;
@@ -325,6 +335,7 @@ a.mob-social__link {
 @media screen and (max-width: 480px) {
   a.mob-social__link {
     font-size: 3.75vw;
+    padding: 0 2.08vw;
   }
 }
 

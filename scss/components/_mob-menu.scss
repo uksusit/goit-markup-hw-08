@@ -100,7 +100,9 @@ transition: transform 250ms ease-in-out;
     // @include mq (mob) {
     //         display: none;
     //     };
-
+@media screen and (max-width: 480px) {
+    font-size: 8.35vw;
+}
 }
 
 .mob-nav__item:not(:first-of-type) {
@@ -164,6 +166,9 @@ transition: transform 250ms ease-in-out;
     font-size: 24px;
     letter-spacing: 0.02em;
     color: #757575;
+    @media screen and (max-width:480px) {
+            font-size: 5vw;
+        }
 }
 
 // .mob-soc-thumb {
@@ -202,7 +207,7 @@ a.mob-social__link {
     color: #2196f3;
     @media screen and (max-width:480px) {
         font-size: 3.75vw;
-        
+            padding: 0 2.08vw;
     }
 
 }
