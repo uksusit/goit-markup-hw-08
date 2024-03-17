@@ -10,8 +10,12 @@
     }
     @include mq (tab-only) {
         width: 354px;
+        height: 100%;
         img {width: 354px;}
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+                // outline: 1px solid red;
     }
     @include mq (desk){
         img {width: 370px;}
