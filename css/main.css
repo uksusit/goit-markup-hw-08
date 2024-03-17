@@ -428,17 +428,19 @@ a.mob-social__link {
 .site-nav__link:hover, .site-nav__link:focus, .site-nav__link::selection {
   color: var(--blue-color);
 }
-.site-nav__link.current {
-  color: var(--blue-color);
-}
-.site-nav__link.current::after {
-  opacity: 1;
-}
 
 /* .site-nav a:hover::after, 
 .site-nav a:focus::after {
 opacity: 1;
 } */
+.current {
+  color: var(--blue-color);
+}
+
+.current::after {
+  opacity: 1;
+}
+
 /* header contacts */
 .header-contacts {
   display: none;

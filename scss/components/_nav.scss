@@ -57,15 +57,17 @@
     color: var(--blue-color);
         }
 
-    &.current {
-    color: var(--blue-color);
-        }
 
-    &.current::after {
-    opacity: 1;
-        }
 }
 /* .site-nav a:hover::after, 
 .site-nav a:focus::after {
 opacity: 1;
 } */
+
+    .current {
+    color: var(--blue-color);
+        }
+
+    .current::after {
+    opacity: 1;
+        }
