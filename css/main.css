@@ -1197,7 +1197,7 @@ footer .logo span {
 }
 @media screen and (min-width: 1280px) {
   .hero-thumb {
-    max-width: 1200px;
+    max-width: 696px;
   }
 }
 
@@ -1221,6 +1221,11 @@ footer .logo span {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .features {
+    padding-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .features__items {
     gap: 30px;

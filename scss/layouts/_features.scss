@@ -1,7 +1,9 @@
-// .features {
-//     padding-bottom: 0;
-// }
 
+@include mq (desk) {
+    .features {
+    padding-bottom: 0;
+}
+}
 .features__items {
     @include mq(tab){
         gap: 30px;

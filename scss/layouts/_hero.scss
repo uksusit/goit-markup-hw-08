@@ -78,7 +78,8 @@
 .hero-thumb {
     max-width: 480px;
     @include mq(desk){
-        max-width: 1200px;
+        // max-width: 1200px;
+        max-width: 696px;
     }
 }
 
@@ -93,7 +94,6 @@
         letter-spacing: 1.56px;
         text-transform: uppercase;
         margin-bottom: 30px;
-        // max-width: 696px;
 
 // DESKTOP
         @include mq(desk) {
