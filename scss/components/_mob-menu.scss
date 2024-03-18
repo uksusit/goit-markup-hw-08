@@ -52,15 +52,14 @@ transition: transform 250ms ease-in-out;
                 fill;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-            &:hover,
-            &:focus {
-                fill: var(--blue-color);
-                cursor: pointer;
-                /* border-color: var(--blue-color) ; */
-            }
         }
     
+    &:hover,
+    &:focus {
+        & svg{ fill: var(--blue-color);
+            cursor: pointer;
+            /* border-color: var(--blue-color) ; */}
+        }
 
     @include mq (tab) {
         display: none;
@@ -81,16 +80,16 @@ transition: transform 250ms ease-in-out;
         fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-        &:hover,
-        &:focus {
-            fill: var(--blue-color);
-            cursor: pointer;
-            /* border-color: var(--blue-color) ; */
-        }
     }
 
+    &:hover,
+    &:focus {
+       & svg{ fill: var(--blue-color);
+        cursor: pointer;
+        /* border-color: var(--blue-color) ; */}
+    }
 }
+
 .mob-nav {
     // font-family: var(--font-family);
     font-weight: 500;

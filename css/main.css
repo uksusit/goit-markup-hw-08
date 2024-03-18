@@ -199,7 +199,7 @@ margin-left: 30px;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-toggle svg:hover, .menu-toggle svg:focus {
+.menu-toggle:hover svg, .menu-toggle:focus svg {
   fill: var(--blue-color);
   cursor: pointer;
   /* border-color: var(--blue-color) ; */
@@ -227,7 +227,7 @@ margin-left: 30px;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-container .menu-toggle svg:hover, .menu-container .menu-toggle svg:focus {
+.menu-container .menu-toggle:hover svg, .menu-container .menu-toggle:focus svg {
   fill: var(--blue-color);
   cursor: pointer;
   /* border-color: var(--blue-color) ; */
