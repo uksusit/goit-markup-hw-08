@@ -773,7 +773,6 @@ footer .logo span {
 /* ------------checkbox ---------- */
 .checkbox {
   /* margin-top: 20px; */
-  margin-left: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,6 +782,11 @@ footer .logo span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  .checkbox {
+    margin-left: 12px;
+  }
 }
 
 .checkbox__label {
@@ -808,34 +812,29 @@ footer .logo span {
   clip: rect(0 0 0 0);
 }
 
-.form__text-policy {
-  margin-left: 8px;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  /* outline: auto; */
-}
-@media screen and (min-width: 1280px) {
-  .form__text-policy {
-    font-size: 14px;
-    letter-spacing: 0.42px;
-  }
-}
-
 .form__policy {
-  margin-left: 5px;
-  color: var(--blue-color);
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
   font-size: 12px;
-  line-height: 24px;
-  /* 171.429% */
-  /* outline: none; */
+  letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1280px) {
   .form__policy {
     font-size: 14px;
     letter-spacing: 0.42px;
   }
+}
+
+.form__text-policy {
+  margin-left: 8px;
+  /* outline: auto; */
+}
+
+.form__link-policy {
+  margin-left: 5px;
+  color: var(--blue-color);
+  text-decoration-line: underline;
+  line-height: 24px;
+  /* 171.429% */
+  /* outline: none; */
 }
 
 .checkbox__custom {

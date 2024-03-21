@@ -96,10 +96,13 @@
 /* ------------checkbox ---------- */
 .checkbox {
     /* margin-top: 20px; */
-    margin-left: 12px;
     display: flex;
     justify-content: baseline;
     align-items: center;
+    @include mq (desk) {
+    margin-left: 12px;
+
+    }
 }
 
 .checkbox__label {
@@ -120,31 +123,33 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
-
-.form__text-policy {
-    margin-left: 8px;
-    font-size: 12px;
+.form__policy {
+        font-size: 12px;
     letter-spacing: 0.03em;
     // desktop
     @include mq (desk) {
         font-size: 14px;
     letter-spacing: 0.42px;
     }
+}
+.form__text-policy {
+    margin-left: 8px;
+
     /* outline: auto; */
 }
 
-.form__policy {
+.form__link-policy {
     margin-left: 5px;
     color: var(--blue-color);
-    letter-spacing: 0.03em;
+    // font-size: 12px;
+    // letter-spacing: 0.03em;
     text-decoration-line: underline;
-    font-size: 12px;
     line-height: 24px;
     /* 171.429% */
-    @include mq (desk) {
-        font-size: 14px;
-    letter-spacing: 0.42px;
-    }
+    // @include mq (desk) {
+    //     font-size: 14px;
+    // letter-spacing: 0.42px;
+    // }
     /* outline: none; */
 }
 
