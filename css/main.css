@@ -1109,9 +1109,19 @@ footer .logo span {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1280px) {
   .project__ol-desc {
-    padding: 12.9vw 4.8vw;
+    padding: 16vw 4.8vw 25vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project__ol-desc {
+    padding: 77px 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project__ol-desc {
+    padding: 12.9vw 4.8vw 97px;
     line-height: 5vw;
     font-size: 3.75vw;
   }
@@ -1181,7 +1191,6 @@ footer .logo span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-size: 780px 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tab.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
   }
