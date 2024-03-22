@@ -170,10 +170,10 @@
             outline-color: var(--blue-color);
         }
 
-    .checkbox__accept:focus+& {
-            outline-color: var(--blue-color);
-            border-color: #188CE8;
-        }
+    // .checkbox__accept:focus+& {
+    //         outline-color: var(--blue-color);
+    //         border-color: #188CE8;
+    //     }
 }
 
 .checkbox__icon {

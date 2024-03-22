@@ -863,10 +863,6 @@ footer .logo span {
   opacity: 1;
   outline-color: var(--blue-color);
 }
-.checkbox__accept:focus + .checkbox__custom {
-  outline-color: var(--blue-color);
-  border-color: #188CE8;
-}
 
 .checkbox__icon {
   opacity: 0;
